@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://script/Travelmenu.gdns" type="Script" id=1]
+
+[node name="travelmenu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 104.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="home" type="Button" parent="HBoxContainer"]
+margin_right = 49.0
+margin_bottom = 40.0
+text = "home"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="zurich" type="Button" parent="HBoxContainer"]
+margin_left = 53.0
+margin_right = 104.0
+margin_bottom = 40.0
+text = "zurich"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tokyo" type="Button" parent="HBoxContainer"]
+margin_left = 108.0
+margin_right = 155.0
+margin_bottom = 40.0
+text = "tokyo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="moskow" type="Button" parent="HBoxContainer"]
+margin_left = 159.0
+margin_right = 224.0
+margin_bottom = 40.0
+text = "moskow"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sydney" type="Button" parent="HBoxContainer"]
+margin_left = 228.0
+margin_right = 285.0
+margin_bottom = 40.0
+text = "sydney"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="HBoxContainer/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="HBoxContainer/zurich" to="." method="_on_zurich_pressed"]
+[connection signal="pressed" from="HBoxContainer/tokyo" to="." method="_on_tokyo_pressed"]
+[connection signal="pressed" from="HBoxContainer/moskow" to="." method="_on_moskow_pressed"]
+[connection signal="pressed" from="HBoxContainer/sydney" to="." method="_on_sydney_pressed"]

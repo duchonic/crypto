@@ -1,0 +1,293 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://script/Stat.gdns" type="Script" id=1]
+
+[node name="stat" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="stat" type="HBoxContainer" parent="."]
+anchor_right = 0.449
+anchor_bottom = 0.152
+margin_left = 3.30951
+margin_top = 296.982
+margin_right = 139.309
+margin_bottom = 364.982
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="VBoxContainer" parent="stat"]
+margin_right = 66.0
+margin_bottom = 92.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="daysleft" type="Button" parent="stat/label"]
+margin_right = 66.0
+margin_bottom = 20.0
+size_flags_vertical = 3
+text = "days left"
+
+[node name="money" type="Button" parent="stat/label"]
+margin_top = 24.0
+margin_right = 66.0
+margin_bottom = 44.0
+size_flags_vertical = 3
+text = "money"
+
+[node name="credit" type="Button" parent="stat/label"]
+margin_top = 48.0
+margin_right = 66.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+text = "credit"
+
+[node name="health" type="Button" parent="stat/label"]
+margin_top = 72.0
+margin_right = 66.0
+margin_bottom = 92.0
+size_flags_vertical = 3
+text = "health"
+
+[node name="stats" type="VBoxContainer" parent="stat"]
+margin_left = 70.0
+margin_right = 119.0
+margin_bottom = 92.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="daysleft" type="Button" parent="stat/stats"]
+margin_right = 49.0
+margin_bottom = 20.0
+size_flags_vertical = 3
+text = "56"
+
+[node name="money" type="Button" parent="stat/stats"]
+margin_top = 24.0
+margin_right = 49.0
+margin_bottom = 44.0
+size_flags_vertical = 3
+text = "999"
+
+[node name="credit" type="Button" parent="stat/stats"]
+margin_top = 48.0
+margin_right = 49.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+text = "-4000"
+
+[node name="health" type="Button" parent="stat/stats"]
+margin_top = 72.0
+margin_right = 49.0
+margin_bottom = 92.0
+size_flags_vertical = 3
+text = "10"
+
+[node name="coin" type="HBoxContainer" parent="."]
+anchor_right = 0.449
+anchor_bottom = 0.152
+margin_left = 5.34115
+margin_top = 412.776
+margin_right = 141.341
+margin_bottom = 480.776
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="VBoxContainer" parent="coin"]
+margin_right = 67.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btc" type="Button" parent="coin/label"]
+margin_right = 67.0
+margin_bottom = 20.0
+size_flags_vertical = 3
+text = "bitcoin"
+
+[node name="eth" type="Button" parent="coin/label"]
+margin_top = 24.0
+margin_right = 67.0
+margin_bottom = 44.0
+size_flags_vertical = 3
+text = "etherum"
+
+[node name="ltc" type="Button" parent="coin/label"]
+margin_top = 48.0
+margin_right = 67.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+text = "litecoin"
+
+[node name="coins" type="VBoxContainer" parent="coin"]
+margin_left = 71.0
+margin_right = 107.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btc" type="Button" parent="coin/coins"]
+margin_right = 36.0
+margin_bottom = 20.0
+size_flags_vertical = 3
+text = "56"
+
+[node name="eth" type="Button" parent="coin/coins"]
+margin_top = 24.0
+margin_right = 36.0
+margin_bottom = 44.0
+size_flags_vertical = 3
+text = "999"
+
+[node name="ltc" type="Button" parent="coin/coins"]
+margin_top = 48.0
+margin_right = 36.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+text = "10"
+
+[node name="wallet" type="HBoxContainer" parent="."]
+anchor_right = 0.449
+anchor_bottom = 0.152
+margin_left = 296.681
+margin_top = 409.354
+margin_right = 432.681
+margin_bottom = 477.354
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="VBoxContainer" parent="wallet"]
+margin_right = 67.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btc" type="Button" parent="wallet/label"]
+margin_right = 67.0
+margin_bottom = 20.0
+size_flags_vertical = 3
+text = "bitcoin"
+
+[node name="eth" type="Button" parent="wallet/label"]
+margin_top = 24.0
+margin_right = 67.0
+margin_bottom = 44.0
+size_flags_vertical = 3
+text = "etherum"
+
+[node name="ltc" type="Button" parent="wallet/label"]
+margin_top = 48.0
+margin_right = 67.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+text = "litecoin"
+
+[node name="coins" type="VBoxContainer" parent="wallet"]
+margin_left = 71.0
+margin_right = 107.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btc" type="Button" parent="wallet/coins"]
+margin_right = 36.0
+margin_bottom = 20.0
+size_flags_vertical = 3
+text = "56"
+
+[node name="eth" type="Button" parent="wallet/coins"]
+margin_top = 24.0
+margin_right = 36.0
+margin_bottom = 44.0
+size_flags_vertical = 3
+text = "999"
+
+[node name="ltc" type="Button" parent="wallet/coins"]
+margin_top = 48.0
+margin_right = 36.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+text = "10"
+
+[node name="buy" type="VBoxContainer" parent="wallet"]
+margin_left = 111.0
+margin_right = 146.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buy_btc" type="Button" parent="wallet/buy"]
+margin_right = 35.0
+margin_bottom = 20.0
+size_flags_vertical = 3
+text = "buy"
+
+[node name="buy_eth" type="Button" parent="wallet/buy"]
+margin_top = 24.0
+margin_right = 35.0
+margin_bottom = 44.0
+size_flags_vertical = 3
+text = "buy"
+
+[node name="buy_ltc" type="Button" parent="wallet/buy"]
+margin_top = 48.0
+margin_right = 35.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+text = "buy"
+
+[node name="sell" type="VBoxContainer" parent="wallet"]
+margin_left = 150.0
+margin_right = 185.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sell_btc" type="Button" parent="wallet/sell"]
+margin_right = 35.0
+margin_bottom = 20.0
+size_flags_vertical = 3
+text = "sell"
+
+[node name="sell_eth" type="Button" parent="wallet/sell"]
+margin_top = 24.0
+margin_right = 35.0
+margin_bottom = 44.0
+size_flags_vertical = 3
+text = "sell"
+
+[node name="sell_ltc" type="Button" parent="wallet/sell"]
+margin_top = 48.0
+margin_right = 35.0
+margin_bottom = 68.0
+size_flags_vertical = 3
+text = "sell"
+
+[node name="timer" type="Timer" parent="."]
+wait_time = 1.063
+autostart = true
+[connection signal="pressed" from="wallet/buy/buy_btc" to="." method="_on_buy_btc_pressed"]
+[connection signal="pressed" from="wallet/buy/buy_eth" to="." method="_on_buy_eth_pressed"]
+[connection signal="pressed" from="wallet/buy/buy_ltc" to="." method="_on_buy_ltc_pressed"]
+[connection signal="pressed" from="wallet/sell/sell_btc" to="." method="_on_sell_btc_pressed"]
+[connection signal="pressed" from="wallet/sell/sell_eth" to="." method="_on_sell_eth_pressed"]
+[connection signal="pressed" from="wallet/sell/sell_ltc" to="." method="_on_sell_ltc_pressed"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
