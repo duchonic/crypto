@@ -12,7 +12,7 @@ impl Coins {
 
     #[export]
     fn _ready(&self, _owner: &Node) {
-        godot_print!("hello, this is rust from coins");
+        //godot_print!("hello, this is rust from coins");
     }
 }
 

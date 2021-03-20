@@ -16,7 +16,7 @@ impl HelloWorld {
 
     #[export]
     fn _ready(&self, _owner: &Node) {
-        godot_print!("hello, rust");
+        //godot_print!("hello, rust");
     }
 }
 
@@ -28,6 +28,6 @@ impl Coin {
 
     #[export]
     fn _ready(&self, _owner: &Node) {
-        godot_print!("hello, coin rust");
+        //godot_print!("hello, coin rust");
     }
 }

@@ -7,6 +7,7 @@ mod hello_world;
 mod coins;
 mod travel_menu;
 mod game_state;
+mod stat;
 
 use hello_world::Coin;
 use hello_world::HelloWorld;
@@ -18,7 +19,8 @@ fn init(handle: InitHandle) {
   handle.add_class::<HelloWorld>();
   handle.add_class::<Coin>();
   handle.add_class::<Travelmenu>();
-  handle.add_class::< game_state::GameState >();
+  handle.add_class::<game_state::GameState >();
+  handle.add_class::<stat::Stat>();
 }
 
 godot_init!(init);
