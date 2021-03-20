@@ -1,0 +1,11 @@
+/Users/nicolasduchoud/gamedev/station.codes/script/target/debug/deps/xmlparser-f139349643ec8c8d.rmeta: /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/lib.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/error.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/stream.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/strspan.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/xmlchar.rs
+
+/Users/nicolasduchoud/gamedev/station.codes/script/target/debug/deps/libxmlparser-f139349643ec8c8d.rlib: /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/lib.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/error.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/stream.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/strspan.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/xmlchar.rs
+
+/Users/nicolasduchoud/gamedev/station.codes/script/target/debug/deps/xmlparser-f139349643ec8c8d.d: /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/lib.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/error.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/stream.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/strspan.rs /Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/xmlchar.rs
+
+/Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/lib.rs:
+/Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/error.rs:
+/Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/stream.rs:
+/Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/strspan.rs:
+/Users/nicolasduchoud/.cargo/registry/src/github.com-1ecc6299db9ec823/xmlparser-0.13.3/src/xmlchar.rs:

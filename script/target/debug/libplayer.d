@@ -1,0 +1,1 @@
+/Users/nicolasduchoud/gamedev/station.codes/script/target/debug/libplayer.dylib: /Users/nicolasduchoud/gamedev/station.codes/script/src/coins.rs /Users/nicolasduchoud/gamedev/station.codes/script/src/hello_world.rs /Users/nicolasduchoud/gamedev/station.codes/script/src/lib.rs
