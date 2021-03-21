@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Katergo.ogg-757d7ae2b3befb961399d02e34eb2c36.oggstr"
+
+[deps]
+
+source_file="res://assets/Katergo.ogg"
+dest_files=[ "res://.import/Katergo.ogg-757d7ae2b3befb961399d02e34eb2c36.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
