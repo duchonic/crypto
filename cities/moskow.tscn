@@ -29,6 +29,7 @@ surfaces/0 = {
 script = ExtResource( 2 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+visible = false
 position = Vector2( 694.689, 111.883 )
 script = ExtResource( 7 )
 
@@ -50,9 +51,6 @@ source = "res://cities/moskow.json"
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.01189 )
-
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 0.738232, 0, -0.674547, 0, 1, 0, 0.674547, 0, 0.738232, -8.47738, 0, 0 )
 
 [node name="Spatial" type="Spatial" parent="."]
 script = ExtResource( 5 )

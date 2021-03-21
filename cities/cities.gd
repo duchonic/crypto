@@ -1,4 +1,5 @@
 extends Spatial
+signal restart;
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -7,13 +8,13 @@ var ls_desc = "Text printed when using help for this command (help cmdname)"; #O
 var ls_help = "Text printed when using 'help' command"; #Optional
 var highscore_help = "get the current top10 highscore"
 var highscore_desc = "get highscore"
-
 var playername : String
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Console.connect_node(self);
-	
+
 
 func _process(delta):
 	pass
@@ -45,11 +46,4 @@ func wipe_cmd():
 	SilentWolf.Scores.wipe_leaderboard()
 
 func ls_cmd(arg0, arg1):
-	#arg0 and arg1 is an arguments provided after command,
-	#there can be any number of arguments
 	Console.print("ls output");
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

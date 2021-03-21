@@ -19,6 +19,8 @@ impl Stat {
     #[export]
     fn _on_timer_timeout(&self, owner: &Node) {
 
+        let test : Node;
+
         let rust_game_state = load_game_state(owner).expect("Failed to get game state instance");
 
         rust_game_state
@@ -62,39 +64,7 @@ impl Stat {
         };
 
 
-        let bitcoin = rust_game_state
-            .map_mut(|gs, _| gs.get_btc())
-            .expect("could not read bitcoin");
 
-        if let Some(button) = owner.get_node("./coin/coins/btc").and_then(|node| {
-            let node = unsafe { node.assume_safe() };
-            node.cast::<Button>()
-        }) {
-            let button = unsafe { button.assume_unique() };
-            button.set_text(bitcoin.to_string());
-        };
-
-        let etherum = rust_game_state
-            .map_mut(|gs, _| gs.get_eth())
-            .expect("could not read etherum");
-        if let Some(button) = owner.get_node("./coin/coins/eth").and_then(|node| {
-                let node = unsafe { node.assume_safe() };
-                node.cast::<Button>()
-        }) {
-                let button = unsafe { button.assume_unique() };
-                button.set_text(etherum.to_string());
-        };
-
-        let litecoin = rust_game_state
-            .map_mut(|gs, _| gs.get_ltc())
-            .expect("could not read litecoin");
-        if let Some(button) = owner.get_node("./coin/coins/ltc").and_then(|node| {
-            let node = unsafe { node.assume_safe() };
-            node.cast::<Button>()
-        }) {
-            let button = unsafe { button.assume_unique() };
-            button.set_text(litecoin.to_string());
-        };
 
         let mybtc = rust_game_state
             .map_mut(|gs, _| gs.get_my_btc())
@@ -127,6 +97,58 @@ impl Stat {
             let button = unsafe { button.assume_unique() };
             button.set_text(myltc.to_string());
         };
+        let bitcoin = rust_game_state
+        .map_mut(|gs, _| gs.get_btc())
+        .expect("could not read bitcoin");
+
+        if let Some(button) = owner.get_node("./coin/coins/btc").and_then(|node| {
+            let node = unsafe { node.assume_safe() };
+            node.cast::<Button>()
+        }) {
+            let button = unsafe { button.assume_unique() };
+            button.set_text(bitcoin.to_string());
+        };
+
+        let etherum = rust_game_state
+            .map_mut(|gs, _| gs.get_eth())
+            .expect("could not read etherum");
+        if let Some(button) = owner.get_node("./coin/coins/eth").and_then(|node| {
+                let node = unsafe { node.assume_safe() };
+                node.cast::<Button>()
+        }) {
+                let button = unsafe { button.assume_unique() };
+                button.set_text(etherum.to_string());
+        };
+
+        let litecoin = rust_game_state
+            .map_mut(|gs, _| gs.get_ltc())
+            .expect("could not read litecoin");
+        if let Some(button) = owner.get_node("./coin/coins/ltc").and_then(|node| {
+            let node = unsafe { node.assume_safe() };
+            node.cast::<Button>()
+        }) {
+            let button = unsafe { button.assume_unique() };
+            button.set_text(litecoin.to_string());
+        };
+
+        //if rust_game_state.map_mut(|gs, _| gs.get_day()).expect("could not read days") == 0 {
+        //    godot_print!("its over in the stats");
+        //    if let Some(node) = owner.get_node("./stat").and_then(|node| {
+        //        let node = unsafe { node.assume_safe() };
+        //        node.cast::<Node2D>()
+        //    }) {
+         //       let node  = unsafe { node.assume_unique() };
+                //button.set_text(days.to_string());
+                //node::visible = false;
+                //node.set_visible(false);
+        //    };
+        //}
+        //else{
+        //}
+
+
+
+
     }
 
 
@@ -179,6 +201,18 @@ impl Stat {
             .map_mut(|gs, _| gs.sell_ltc())
             .expect("ltc buy failed");
     }
-
+    #[export]
+    fn _on_buy_credit_pressed(&self, owner: &Node) {
+        let rust_game_state = load_game_state(owner).expect("Failed to get game state instance");
+        rust_game_state
+            .map_mut(|gs, _| gs.buy_credit())
+            .expect("buy credit failed");
+    }    #[export]
+    fn _on_kill_credit_pressed(&self, owner: &Node) {
+        let rust_game_state = load_game_state(owner).expect("Failed to get game state instance");
+        rust_game_state
+            .map_mut(|gs, _| gs.kill_credit())
+            .expect("kill credit failed");
+    }
 }
 

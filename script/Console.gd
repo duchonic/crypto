@@ -96,6 +96,7 @@ func disconnect_node(node):
 			cmd_args_amount.erase(key);
 
 func command(cmd):
+
 	if cmd == "":
 		return;
 	line.clear();
